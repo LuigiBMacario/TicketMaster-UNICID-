@@ -1,4 +1,15 @@
-<?php include './head.php'?>
+<?php include './head.php';
+    $_SESSION["address"] = "";
+    $_SESSION["phone"] = "";
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_GET["address"])) {
+            $_SESSION["address"] = $_POST["address"];
+        }
+        if (isset($_GET["phone"])) {
+            $_SESSION["phone"] = $_POST["phone"];
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,11 +50,28 @@
                 echo "<h1 class='welcome-user'>Bem-vindo ao TicketMaster, " . $_SESSION["username"] . "!</h1>";
             }
         ?>
-        </br>
-        <a href="../index.php">Voltar para a página inicial</a> </br>
-        <form action="logout.php" mathod='post'>
-            <button type="submit">Encerrar Sessão</button>
-        </form>   
+        <div class="profile-container">
+            <div class="profile-info">
+                <h2>Informações do Perfil</h2>
+                <div class="profile-image-div">
+                    <img class="profile-image" src="../media/images/default_user.jpg" alt="Foto de perfil">
+                    <p class="username">Nome:  <?php echo $_SESSION["username"]?></p>
+                </div>
+                <div class="right-side">
+                    
+                    <form action="" method="post">
+                        <label for="address">Endereço: <?php $_SESSION["address"]?></label>
+                        <input type="text" name="address" value="<?php echo $_SESSION["address"]?>">
+                        <label for="phone">Telefone: <?php $_SESSION["phone"]?></label>
+                        <input type="number" name="phone" value="<?php echo $_SESSION["phone"]?>">
+                        <button type="submit">Salvar</button>
+                    </form>
+                    <form action="logout.php" mathod='post'>
+                            <button class="logoff" type="submit">Encerrar Sessão</button>
+                        </form>  
+                </div>
+            </div>
+        </div>
     </main>
     <aside></aside>
     <footer>

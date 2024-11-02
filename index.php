@@ -10,6 +10,9 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.min.js"></script>
     <title>TicketMaster</title>
 </head>
 <body>
@@ -41,6 +44,7 @@
             <div class="event-grid">
                 <?php include 'php/events.php'; ?>
             </div>
+            <button class="buy" id="purchase-button">Comprar Ingressos</button>
         </main>
         <aside></aside>
         <footer>

@@ -59,7 +59,7 @@ body{
     position: absolute;
     width: 100vw;
     overflow: clip;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 #stars {
@@ -685,6 +685,157 @@ main{
     font-family: 'ESL Legends';
     font-size: 4em;
     color: var(--whitesmoke);
+}
+
+.profile-info{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    min-height: 500px;
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: border 0.1s ease-in-out;
+}
+
+.profile-info button{
+    font-family: 'ESL Legends';
+    font-size: 1.5em;
+    color: var(--deep-grey);
+    background-color: var(--whitesmoke);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover{
+    background-color: var(--blue);
+    color: var(--whitesmoke);
+}
+
+.logoff{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.profile-info input{
+    font-family: 'ESL Legends';
+    font-size: 1.5em;
+    color: var(--deep-grey);
+    background-color: var(--whitesmoke);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info:hover{
+    background-color: rgba(20, 20, 20, 0.6);
+    border: 2px solid var(--light-grey);
+    
+}
+
+.right-side{
+    width: 70%;
+}
+
+.profile-info p{
+    font-family: 'ESL Legends';
+    font-size: 2em;
+    color: var(--whitesmoke);
+}
+
+.username{
+    margin-top: 225px;
+}
+
+.profile-info label{
+    font-family: 'ESL Legends';
+    font-size: 1.5em;
+    color: var(--whitesmoke);
+    margin-top: 20px;
+}
+
+.profile-image-div{
+    z-index: 4;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+.profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.profile-image-div::after, .profile-image-div::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-image: conic-gradient(from var(--angle),#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 3;
+    padding: 4px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        --angle: 0deg;
+    }
+    100%{
+        --angle: 360deg;
+    }
+}
+
+.profile-image-div::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.profile-info h2{
+    position: absolute;
+    margin: 20px;
+    top: 0;
+    left: 0;
+    font-family: 'ESL Legends';
+    font-size: 2em;
+    color: var(--whitesmoke);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 aside{

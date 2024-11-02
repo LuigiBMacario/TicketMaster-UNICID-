@@ -21,6 +21,12 @@
     font-family: sans-serif;
 }
 
+button{
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
 body{
     overflow-x: hidden;
     line-height: 1.5;
@@ -679,6 +685,7 @@ nav{
 
 main{
     grid-area: content;
+    position: relative;
 }
 
 .spotlight-event{
@@ -752,7 +759,6 @@ main{
 .events p{
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
-    font-size: 0.85em;
 }
 
 .img-placeholder{
@@ -774,8 +780,100 @@ main{
     transition: all 0.3s;
 }
 
+.buy{
+    font-family: 'ESL Legends';
+    font-size: 1.5em;
+    color: var(--deep-grey);
+    background-color: var(--whitesmoke);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+    margin-left: 45%;
+}
+
+.buy:hover{
+    background-color: var(--blue);
+    color: var(--whitesmoke);
+}
+
 aside{
     grid-area: sidebar;
+}
+
+.value{
+    color: orange;
+    font-family: "ESL Legends";
+    font-size: 2em;
+    text-align: center;
+}
+
+.event-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.event-card .img-placeholder {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.event-card p {
+    font-size: 1em;
+}
+
+.event-card .learn-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-card .remove-card {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.event-card .remove-card:hover {
+    background-color: #ff3333;
+}
+
+/* Classe para animação de entrada */
+.event-card.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Classe para animação de saída */
+.event-card.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
 }
 
 footer{
