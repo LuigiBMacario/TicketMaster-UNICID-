@@ -3,6 +3,7 @@
 ## Índice
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Instalação](#instalação)
+- [Problemas](#problemas-reconhecidos)
 
 ## Sobre o projeto
 
@@ -35,13 +36,33 @@ Para testar esse website siga os seguintes passos:
     ```bash
    http://localhost/trabalhophp/
 
-<h2>Problemas reconhecidos:</h2>
+## Problemas reconhecidos
 
-<ol>
+1. #### Pagina de SOBRE não adptada aos padrões CSS do projeto.
 
-</ol>
+2. #### Valores individuis dos ingressos aparecem incorretamente no arquivo PDF.
 
-<h3>Limitações do projeto(DEMO)
+3. #### Caso o usuário use o navegador para salvar seu login e senha, a animação dos inputs para de funcionar.
 
-<ol>
-</ol>
+4. #### Valor das compras continua a aparecer mesmo fora da página principal.
+
+5. #### Icone de sacola decorativo. Usar-lo te redirecionará a uma página inexistente.
+
+### Limitações do projeto (DEMO)
+
+1. #### Projeto não adaptado a dispositivos móveis.
+
+2. #### Não é possivel acrecentar mais informações sobre o usuário, pois há limitações a cerca do uso do banco de dados.
+
+3. #### Projeto não grava compras passadas do usuário.
+
+4. #### Footer demonstrativo, nenhuma de suas funcionalidades funciona.
+
+5. #### Não é possivel alterar os dados inseridos no site de forma nativa. Para alteralos é necessario alterar diretamente no banco de dados.
+
+6. #### O projeto pode sofrer de problemas de performace ou adptação em certos com putadores/navegadores. Para criação desse projeto, foram revisados nos navegadores:
+    1. Opera
+    2. Edge
+    3. Chrome
+
+
