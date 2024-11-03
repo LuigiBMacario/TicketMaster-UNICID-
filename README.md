@@ -52,13 +52,13 @@ Para testar esse website siga os seguintes passos:
 
 1. #### Projeto não adaptado a dispositivos móveis.
 
-2. #### Não é possível acrescentar informações sobre o usuário, pois há limitações a cerca do uso do banco de dados.
+2. #### Não é possível acrescentar informações sobre o usuário, pois há limitações acerca do uso do banco de dados.
 
 3. #### Projeto não grava compras passadas do usuário.
 
 4. #### Footer demonstrativo, nenhuma de suas funcionalidades funciona.
 
-5. #### Não é possível alterar os dados inseridos no site de forma nativa. Para alterá-los é necessário alterar diretamente no banco de dados.
+5. #### Não é possível alterar os dados inseridos no site de forma nativa. Para alterá-los, é necessário alterar diretamente no banco de dados.
 
 6. #### O projeto pode sofrer de problemas de performasse ou adaptação em certos computadores/navegadores. Para a criação desse projeto, foi revisado nos navegadores:
     1. Opera
