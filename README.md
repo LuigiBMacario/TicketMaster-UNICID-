@@ -38,29 +38,29 @@ Para testar esse website siga os seguintes passos:
 
 ## Problemas reconhecidos
 
-1. #### Pagina de SOBRE não adptada aos padrões CSS do projeto.
+1. #### Página de SOBRE não adaptada aos padrões CSS do projeto.
 
-2. #### Valores individuis dos ingressos aparecem incorretamente no arquivo PDF.
+2. #### Valores individuais dos ingressos aparecem incorretamente no arquivo PDF.
 
 3. #### Caso o usuário use o navegador para salvar seu login e senha, a animação dos inputs para de funcionar.
 
-4. #### Valor das compras continua a aparecer mesmo fora da página principal.
+4. #### O Valor das compras continua a aparecer mesmo fora da página principal.
 
-5. #### Icone de sacola decorativo. Usar-lo te redirecionará a uma página inexistente.
+5. #### Ícone de sacola decorativo. Usá-lo te redirecionará a uma página inexistente.
 
 ### Limitações do projeto (DEMO)
 
 1. #### Projeto não adaptado a dispositivos móveis.
 
-2. #### Não é possivel acrecentar mais informações sobre o usuário, pois há limitações a cerca do uso do banco de dados.
+2. #### Não é possível acrescentar informações sobre o usuário, pois há limitações a cerca do uso do banco de dados.
 
 3. #### Projeto não grava compras passadas do usuário.
 
 4. #### Footer demonstrativo, nenhuma de suas funcionalidades funciona.
 
-5. #### Não é possivel alterar os dados inseridos no site de forma nativa. Para alteralos é necessario alterar diretamente no banco de dados.
+5. #### Não é possível alterar os dados inseridos no site de forma nativa. Para alterá-los é necessário alterar diretamente no banco de dados.
 
-6. #### O projeto pode sofrer de problemas de performace ou adptação em certos com putadores/navegadores. Para criação desse projeto, foram revisados nos navegadores:
+6. #### O projeto pode sofrer de problemas de performasse ou adaptação em certos computadores/navegadores. Para a criação desse projeto, foi revisado nos navegadores:
     1. Opera
     2. Edge
     3. Chrome
