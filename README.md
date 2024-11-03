@@ -27,9 +27,9 @@ Para testar esse website siga os seguintes passos:
     email(VARCHAR, comprimento: 255)
     passkey(VARCHAR, comprimento: 255)
 
-6. Clone este repositório:
+6. Clone este repositório na pasta htdocs(xampp) ou www(wamp):
    ```bash
-   git clone https://github.com/LuigiBMacario/caseBackEnd.git
+   git clone https://github.com/LuigiBMacario/TicketMaster-UNICID-.git
 
 7. Com o servidor local e o banco de dados configurados, você poderá acessar o TicketMaster no navegador em:
     ```bash
